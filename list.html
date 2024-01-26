@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Travel Lists</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./stle2.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Your Travel Lists</h1>
+        </header>
+
+        <div class="lists-container">
+            <div class="list visited-list">
+                <div class="list-header">Visited</div>
+                <select id="visitedDropdown" class="form-control"></select>
+                <input type="text" id="visitedInput" class="form-control" placeholder="Add a place...">
+                <button class="btn btn-success" onclick="addToVisited()">Add to Visited</button>
+            </div>
+
+            <div class="list want-to-visit-list">
+                <div class="list-header">Want to Visit</div>
+                <select id="wantToVisitDropdown" class="form-control"></select>
+                <input type="text" id="wantToVisitInput" class="form-control" placeholder="Add a place...">
+                <button class="btn btn-warning" onclick="addToWantToVisit()">Add to Want to Visit</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function addToVisited() {
+            const place = document.getElementById('visitedInput').value;
+            const visitedDropdown = document.getElementById('visitedDropdown');
+
+            if (place.trim() !== '') {
+                visitedDropdown.options[visitedDropdown.options.length] = new Option(place, place);
+                document.getElementById('visitedInput').value = '';
+            }
+        }
+
+        function addToWantToVisit() {
+            const place = document.getElementById('wantToVisitInput').value;
+            const wantToVisitDropdown = document.getElementById('wantToVisitDropdown');
+
+            if (place.trim() !== '') {
+                wantToVisitDropdown.options[wantToVisitDropdown.options.length] = new Option(place, place);
+                document.getElementById('wantToVisitInput').value = '';
+            }
+        }
+    </script>
+</body>
+</html>

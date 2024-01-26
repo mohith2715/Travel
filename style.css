@@ -1,0 +1,48 @@
+
+.jumbotron {
+    background: url('./resources/istockphoto-1363398400-612x612.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 500px; /* You can adjust the height as needed */
+    text-align: center;
+    margin-bottom: 0px;
+}
+div{
+    padding: 0px;
+}
+.c1-text1{
+    padding-top: 90px;
+    font-size: 3.5rem;
+    font-family: "Single Day", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #D5F0C1;
+}
+.c1-text2{
+    font-size: 2rem;
+    color: #D5F0C1;
+    font-family: "Single Day", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.c2{
+    padding: 20px;
+    padding-top: 0px;
+}
+.c2h{
+    padding: 20px 20px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+/* Custom CSS */
+.btn-secondary {
+    background-color: #D5F0C1 !important; /* Change this to your preferred color */
+    color: black !important; /* Change this to the text color you prefer on the button */
+}
+.t1{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+.t2{
+    font-size: 1.5rem !important;
+    font-weight: 100 !important;
+}
