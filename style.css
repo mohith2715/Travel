@@ -1,6 +1,6 @@
 
 .jumbotron {
-    background: url('istockphoto-1363398400-612x612.jpg') no-repeat center center fixed;
+    background: url('./istockphoto-1363398400-612x612.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 500px; /* You can adjust the height as needed */
     text-align: center;
